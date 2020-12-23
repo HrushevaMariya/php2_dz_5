@@ -1,0 +1,6 @@
+{% if _user %}
+    Приве, {{ _user.login }}
+    <a href="/users/logout">Выйти</a>
+{% else %}
+     <a href="/users/login">Войти</a>
+{% endif %}
